@@ -1,6 +1,6 @@
 #!/bin/bash
 echo Installing git ...
-
+sudo apt-get update && sudo apt-get upgrade
 sudo apt-get install git
 echo done installing git
 echo ******************************************************************
