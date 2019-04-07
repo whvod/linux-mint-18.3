@@ -24,9 +24,11 @@ make
 make test
 sudo make install 
 
+cd ../
+
 wget https://www.python.org/ftp/python/3.7.2/Python-3.7.2.tar.xz
 
-cd ../
+
 
 cd Python-3.7.2
 ./configure
