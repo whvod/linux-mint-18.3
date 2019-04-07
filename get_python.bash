@@ -28,7 +28,7 @@ cd ../
 
 wget https://www.python.org/ftp/python/3.7.2/Python-3.7.2.tar.xz
 
-
+tar -xf Python-3.7.2.tar.xz
 
 cd Python-3.7.2
 ./configure
