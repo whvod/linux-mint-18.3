@@ -5,38 +5,27 @@ sudo apt-get install git -y
 sudo apt-get install build-essential cmake python3-dev -y
 echo done installing git cmake python3-dev
 echo ******************************************************************
-echo "Installing python version (3.6.8, 3.7.2)"
+echo "Installing python version ( 3.7.4)"
 
 echo ¨****************************************************¨
 
 	
-wget https://www.python.org/ftp/python/3.6.8/Python-3.6.8.tar.xz
 
-tar -xf Python-3.6.8.tar.xz
 
-echo **************************************************************
-
-echo ¨finished getting and tarring¨
-
-cd Python-3.6.8
-./configure
-make
-make test
-sudo make install 
-
-cd ../
+cd /tmp/
 
 wget https://www.python.org/ftp/python/3.7.2/Python-3.7.2.tar.xz
 
-tar -xf Python-3.7.2.tar.xz
+tar -xvf Python-3.7.4.tar.xz
 
-cd Python-3.7.2
+cd Python-3.7.4/
 ./configure
 make
 make test
-sudo make install 
+sudo make altinstall 
 
-cd ../
 
-echo finished
+
+python3.7 -V
+
 echo ******************************************************************
